@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 48px auto;
+    align-items: center;
+    background-color: #693e23;
+    color: #fff;
+
+}
+
+
+
+header h1 {
+    margin: 0px;
+    padding: 0.5rem;
+    font-size: 1.30rem;
+    display: flex;
+    align-items: center;
+}
+
+header h1 img {
+    border-radius: 50%;
+}
+
+header h1 span {
+    margin-left: 1rem;
+}
+
+
+
+header nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: right;
+
+}
+
+header nav a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    color: #fff;
+}
+
+
+
+
+
+
+.hero img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    
+    background-image: url("https://png.pngtree.com/background/20210711/original/pngtree-coffee-shop-poster-background-material-picture-image_1085638.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+
+.producto {
+    width: 30%;
+    margin: 10px;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+
+
+.producto .precio {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #f60;
+    text-align: center;
+}
+
+
+
+.redes {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes li {
+    margin: 10px;
+}
+
+.redes img {
+    width: 30px;
+    height: auto;
+}
+
+footer {
+    background-color: #693e23;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+}
+
+
+
+
+@media(min-width: 557px) {
+
+    header {
+
+        background-color: #2c3e50;
+        color: #fff;
+    }
+
+
+
+    footer {
+        background-color: #2c3e50;
+        padding: 10px;
+        width: 100%;
+        bottom: 0;
+    }
+
+
+}
+
+@media(min-width: 1024px) {
+
+    /*desktop*/
+
+    header {
+
+        background-color: #e77b50;
+        color: #fff;
+    }
+
+    .producto {
+        margin: 30px;
+    }
+
+    .producto img {
+        width: 80%;
+    }
+
+    .producto h3 {
+        font-size: 22px;
+    }
+
+    .producto p {
+        font-size: 18px;
+    }
+
+    .producto .precio {
+        font-size: 20px;
+    }
+
+    .redes img {
+        width: 50px;
+        height: auto;
+    }
+
+
+    footer {
+        background-color: #e77b50;
+        padding: 10px;
+        width: 100%;
+        bottom: 0;
+    }
+}
